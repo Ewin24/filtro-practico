@@ -39,7 +39,7 @@ html {
 .container1 {
     height: 100%;
     width: 50%;
-    background-image: url(/images/img/img111.png);
+    background-image: url(../images/img/img111.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,8 +93,8 @@ html {
     text-align: center;
     margin: 10px;
     border: #0050f5;
-    height: 80px;
-    width: 240px;
+    height: 100px;
+    width: 260px;
     border-radius: 40px;
     background-color: #0050f5;
     font-size: 30px;
@@ -369,7 +369,7 @@ a {
 .pagina6 {
     width: 100vw;
     height: 100vh;
-    background-image: url(/images/img/Campesinos.png);
+    background-image: url(../images/img/Campesinos.png);
     background-position: over;
     background-repeat: no-repeat;
     margin: auto;
