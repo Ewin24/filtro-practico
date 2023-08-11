@@ -76,7 +76,7 @@ hr {
 .container {
     display: flex;
     align-items: center;
-    margin: 20px 20px 50px 20px;
+    margin: 20px 20px 0px 20px;
 
 }
 
@@ -104,7 +104,8 @@ hr {
 }
 
 .image-mapa {
-    width: 300px;
+
+    width: 320px;
 
 }
 
@@ -138,14 +139,13 @@ hr {
 }
 
 .cambiotxt {
-    margin: 20px 30px 30px;
+    margin: 20px 30px 35px;
 }
 
 .secIzquierda {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-right: 70px;
     padding: 20px;
 }
 
@@ -158,11 +158,7 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-
     margin: auto;
-
-
-
 }
 
 .statusCont {
@@ -203,23 +199,51 @@ hr {
 }
 
 .especi {
+    padding: 5px;
     text-align: justify;
     margin: auto;
     margin-left: 15px;
 }
 
 .p1 {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .p2 {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .tecnico>p {
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     text-align: left;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
+}
+
+.nomTec {
+    text-align: right;
+    font-size: 18px;
+}
+
+.celTec {
+    text-align: center;
+    font-size: 15px;
+}
+
+.btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: #0050f5;
+    margin-left: 90%;
+    height: 30px;
+    width: 100px;
+    border-radius: 40px;
+    background-color: #0050f5;
+    color: white;
+    font-size: 15px;
+    flex-wrap: wrap;
 }
