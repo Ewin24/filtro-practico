@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/register.css">
+
+    </head>
+    <body>
+        <button type="button" onclick="myFunction()"> Iniciar sesion</button>
+        <div class="popup" id="popup">
+            <div class="card">
+                <div class="card-icon">
+                    <i>
+                        <img class="icon" src="../images/icons/Icon-logout.svg"
+                            alt="icono para salir de la tarjeta">
+                    </i>
+                </div>
+                <div class="card-header">
+                    <img src="../images/img/logo.jpeg" width="230px"
+                        alt="logo de pagina web repair express!">
+                    <p>Por favor ingresa los siguientes datos personales</p>
+                </div>
+                <div class="card-form">
+                    <label for="id">
+                        <p>Correo Electrónico (Este será tu Repair Express ID)</p>
+                    </label>
+                    <input class="form-input" type="text" name="id">
+                    <label for="clave">
+                        <p>Contraseña</p>
+                    </label>
+                    <input class="form-input" type="text" name="clave">
+                    <label for="clave">
+                        <p>Repetir Contraseña</p>
+                    </label>
+                    <input class="form-input" type="text" name="clave">
+
+                    <div class="calendar-box">
+                        <label for="date">
+                            <p>Fecha de Nacimiento</p>
+                        </label>
+                        <input class="form-input" name="date" type="text"
+                            required>
+                        <img class="calendario"
+                            src="../images/icons/Icon awesome-calendar-alt.png"
+                            alt="calendario">
+                    </div>
+
+                    <label for="direccion">
+                        <p>Dirección</p>
+                    </label>
+                    <input class="form-input" type="text" name="direccion">
+                </div>
+                <div class="card-btn">
+                    <button type="button" class="btn">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function myFunction() {
+          var popup = document.getElementById("popup");
+          popup.style.visibility = "visible";
+        }
+    </script>
+</html>

@@ -1,0 +1,107 @@
+/* estilos generales */
+@font-face {
+    font-family: myriad;
+    src: url(../fonts/myriad/MyriadPro-Light.otf);
+}
+
+.icon {
+    width: 30px;
+    position: absolute;
+    left: 90%;
+    top: 9%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    /* font-family: Kollektif; */
+    font-family: myriad;
+    background-color: antiquewhite;
+}
+
+.btn {
+    border: #0050f5;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    background-color: #0050f5;
+    color: white;
+}
+
+.form-input {
+    border-radius: 40px;
+    border: 1px solid #868383;
+    height: 50px;
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+    padding: 20px;
+}
+
+/* popup */
+.popup {
+    /* visibility: hidden; estilo para hacer el popup*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+/* card */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: white;
+    border-radius: 50px 50px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-block-end: 3%;
+}
+
+.card-header p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* labels que estan sobre los input */
+.card-form label p {
+    margin-left: 2%;
+    font-size: medium;
+    margin-right: 2%;
+    margin-top: 3%;
+    margin-block-end: 1%;
+}
+
+.card-btn {
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 4%;
+}
+
+/* hacer el calendar custom */
+.calendar-box {
+    position: relative;
+}
+
+.calendario {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+}
