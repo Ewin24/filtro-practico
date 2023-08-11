@@ -88,9 +88,9 @@
                     </div>
                     <form class="billing-contact">
                         <div class="input-row">
-                            <div>
+                            <div class="">
                                 <label for="primer-nombre">Numero de Tarjeta</label>
-                                <input type="text" id="primer-nombre"
+                                <input type="text" id="input-tarjeta"
                                     name="primer-nombre" required>
                             </div>
                         </div>
@@ -116,21 +116,30 @@
                 </div>
                 <div class="column">
                     <h2>Tu Orden</h2>
-                    <hr>
+                    <hr class="hr-inferior">
                     <p>Viernes Abril 23 del 2021, 6:00 PM</p>
                     <p>1x cambio de pantalla iPhone X $600.000 COP</p>
-                    <hr>
-                    <p>Subtotal</p>
-                    <p class="align-right">$586.000 COP</p>
-                    <p>IVA 19%</p>
-                    <p class="align-right">$14.000 COP</p>
-                    <hr>
-                    <p>Total</p>
-                    <p class="align-right">$600.000 COP</p>
-                    <p class="small-text">Recuerda que el sistema hará una
+                    <hr class="hr-inferior">
+                    <div class="input-row">
+                        <p>Subtotal</p>
+                        <p class="align-right">$586.000 COP</p>
+                    </div>
+                    <div class="input-row">
+                        <p>IVA 19%</p>
+                        <p class="align-right">$14.000 COP</p>
+                    </div>
+                    <hr class="hr-inferior">
+                    <div class="input-row">
+                        <p>Total</p>
+                        <p class="align-right">$600.000 COP</p>
+                    </div>
+                    <p class="small-text text-center">Recuerda que el sistema
+                        hará una
                         retención del dinero, la cual se liberará cuando la
                         reparación esté totalmente realizada.</p>
-                    <button class="blue-button">Realizar Pago</button>
+                    <div class="center">
+                        <button class="blue-button">Realizar Pago</button>
+                    </div>
                 </div>
             </div>
         </div>
