@@ -13,9 +13,7 @@
 }
 
 body {
-    /* font-family: Kollektif; */
     font-family: myriad;
-    background-color: antiquewhite;
 }
 
 .btn {
@@ -36,12 +34,13 @@ body {
 
 /* popup */
 .popup {
-    /* visibility: hidden; estilo para hacer el popup*/
-    position: absolute;
+    visibility: hidden;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    z-index: 1001;
 }
 
 /* card */
@@ -70,13 +69,13 @@ body {
     margin-block-end: 3%;
 }
 
-.card-header p{
+.card-header p {
     font-size: 18px;
     font-weight: bold;
 }
 
 /* labels que estan sobre los input */
-.card-form label p{
+.card-form label p {
     margin-left: 2%;
     font-size: medium;
     margin-right: 2%;
