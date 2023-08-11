@@ -1,0 +1,255 @@
+/* Estilos generales */
+@font-face {
+    font-family: myriad;
+    src: url(../fonts/myriad/MyriadPro-Light.otf);
+}
+
+body {
+    font-family: myriad;
+}
+
+/* Header */
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    text-align: center;
+    justify-items: center;
+    padding-left: 160px;
+}
+
+.reparar-text {
+    font-size: 200%;
+    margin: 0 0;
+    font-weight: bold;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 200px;
+    align-items: center
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+hr {
+    width: 80%;
+    color: #000000;
+    border-color: #000000;
+}
+
+/* Sección de pagos */
+.pagos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Icono de pagar */
+.pagar-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Columnas */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Estilos específicos de las columnas */
+.column h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Estilos de la barra horizontal */
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* Estilos para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para la sección de información de facturación */
+.billing-contact {
+    margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.billing-contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.correo-electronico {
+    margin-left: 25%;
+}
+
+.input-row {
+    display: flex;
+    gap: 2%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.billing-contact label {
+    margin-left: 5%;
+    font-weight: lighter;
+    font-size: medium;
+    text-align: start;
+}
+
+.billing-contact input[type="text"],
+.billing-contact input[type="email"],
+.billing-contact input[type="date"],
+.billing-contact input[type="number"] {
+    flex-basis: 45%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    /* Hace los bordes completamente redondos */
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de métodos de pago */
+.payment-methods {
+    display: flex;
+    gap: 2%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-methods .payment-card {
+    padding: 5px;
+    background-color: #007bff;
+    border-radius: 15px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-methods img {
+    width: 40px;
+    border-radius: 5px;
+}
+
+
+/* Estilos para la sección de orden */
+.order-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.order-section hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.order-section p {
+    margin: 10px 0;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.blue-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.blue-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos para la sección de tarjeta de pago */
+.payment-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.payment-card label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.payment-card input[type="text"],
+.payment-card input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.payment-card .inline-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* hacer el calendar custom */
+.calendar-box {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+}
+
+.calendario {
+    position: absolute;
+    left: 20px;
+    top: 66%;
+    width: 20px;
+}
