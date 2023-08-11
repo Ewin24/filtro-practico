@@ -8,7 +8,8 @@
 
     </head>
     <body>
-        <button type="button" onclick="myFunction()"> Iniciar sesion</button>
+        <div class="overlay" onclick="hideLoginPopup()"></div>
+
         <div class="popup" id="popup">
             <div class="card">
                 <div class="card-icon">
@@ -37,7 +38,7 @@
                         <button type="button" class="btn">Ingresar</button>
                     </a>
                     <a href="../pages/register.html">
-                        <button type="button" class="btn">Registrarse</button>
+                        <button type="button" class="btn" onclick="myFunction()">Registrarse</button>
                     </a>
                 </div>
                 <hr class="card-line">
@@ -50,10 +51,4 @@
             </div>
         </div>
     </body>
-    <script>
-        function myFunction() {
-        //   var popup = document.getElementById("popup");
-        //   popup.style.visibility = "visible";
-        }
-    </script>
 </html>

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style-index.css">
         <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/register.css">
         <title>Pagina Principal</title>
     </head>
     <body>
@@ -25,7 +26,7 @@
                 </div>
                 <div class="botones">
                     <div class="btn"> <a href="/pages/repair.html">Reparar ya</a></div>
-                    <div class="btn"> <a onclick="myFunction()">Revisar Servicio</a></div>
+                    <div class="btn"> <a onclick="login()">Revisar Servicio</a></div>
                 </div>
                 <div class="imagenes">
                     <div class="imagen">
@@ -187,7 +188,7 @@
             <div class="cont-footer">Soporte</div>
         </div>
 
-        <!-- MODAL -->
+        <!-- MODAL LOGIN -->
         <div class="popup" id="popup">
             <div class="card">
                 <div class="card-icon">
@@ -215,8 +216,8 @@
                     <a href="../pages/main-page.html">
                         <button type="button" class="btn">Ingresar</button>
                     </a>
-                    <a href="../pages/register.html">
-                        <button type="button" class="btn">Registrarse</button>
+                    <a>
+                        <button type="button" class="btn" onclick="register()">Registrarse</button>
                     </a>
                 </div>
                 <hr class="card-line">
@@ -229,8 +230,61 @@
             </div>
         </div>
 
+        <!-- MODAL REGISTER -->
+        <div class="register" id="register">
+            <div class="card">
+                <div class="card-icon">
+                    <i>
+                        <img class="icon" src="../images/icons/Icon-logout.svg"
+                            alt="icono para salir de la tarjeta">
+                    </i>
+                </div>
+                <div class="card-header">
+                    <img src="../images/img/logo.jpeg" width="230px"
+                        alt="logo de pagina web repair express!">
+                    <p>Por favor ingresa los siguientes datos personales</p>
+                </div>
+                <div class="card-form">
+                    <label for="id">
+                        <p>Correo Electrónico (Este será tu Repair Express ID)</p>
+                    </label>
+                    <input class="form-input" type="text" name="id">
+                    <label for="clave">
+                        <p>Contraseña</p>
+                    </label>
+                    <input class="form-input" type="text" name="clave">
+                    <label for="clave">
+                        <p>Repetir Contraseña</p>
+                    </label>
+                    <input class="form-input" type="text" name="clave">
+
+                    <div class="calendar-box">
+                        <label for="date">
+                            <p>Fecha de Nacimiento</p>
+                        </label>
+                        <input class="form-input" name="date" type="text"
+                            required>
+                        <img class="calendario"
+                            src="../images/icons/Icon awesome-calendar-alt.png"
+                            alt="calendario">
+                    </div>
+
+                    <label for="direccion">
+                        <p>Dirección</p>
+                    </label>
+                    <input class="form-input" type="text" name="direccion">
+                </div>
+                <div class="card-btn">
+                    <a href="pages/main-page.html">
+                        <button type="button" class="btn"
+                            onclick="hideLoginPopup()">Registrarse</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <script>
-            function myFunction() {
+            function login() {
             var overlay = document.querySelector(".overlay");
             var popup = document.getElementById("popup");
 
@@ -241,9 +295,20 @@
             function hideLoginPopup() {
             var overlay = document.querySelector(".overlay");
             var popup = document.getElementById("popup");
+            var register = document.getElementById("register");
+
 
             overlay.style.display = "none"; // Ocultar el fondo difuminado
             popup.style.visibility = "hidden"; // Ocultar el popup
+            register.style.visibility = "hidden"; // Ocultar el popup
+            }
+
+            function register() {
+            var overlay = document.querySelector(".overlay");
+            var register = document.getElementById("register");
+
+            overlay.style.display = "block"; // Mostrar el fondo difuminado
+            register.style.visibility = "visible"; // Ocultar el popup
             }
         </script>
     </body>

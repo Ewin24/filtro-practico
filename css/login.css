@@ -33,8 +33,7 @@ body {
 }
 
 /* popup */
-.popup {
-    visibility: hidden;
+.login {
     position: fixed;
     left: 50%;
     top: 50%;
