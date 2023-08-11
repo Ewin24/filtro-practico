@@ -253,7 +253,6 @@ img {
     width: 20px;
 }
 
-
 .hr-inferior {
     width: 100%;
 }
@@ -263,12 +262,4 @@ img {
     align-items: center;
     justify-content: center;
     margin-top: 4%;
-}
-
-.input-tarjeta{
-    display: flex;
-    gap: 2%;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 10px;
 }
